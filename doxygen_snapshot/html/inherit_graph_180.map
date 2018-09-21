@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classalps_1_1gf_1_1base__mesh.html" title="Common part of interface and implementation for GF meshes. " alt="" coords="5,97,145,124"/>
+<area shape="rect" id="node2" href="$classalps_1_1gf_1_1legendre__mesh.html" title="alps::gf::legendre_mesh" alt="" coords="211,5,373,32"/>
+<area shape="rect" id="node3" href="$classalps_1_1gf_1_1matsubara__mesh.html" title="alps::gf::matsubara\l_mesh\&lt; PTYPE \&gt;" alt="" coords="225,57,359,98"/>
+<area shape="rect" id="node4" href="$classalps_1_1gf_1_1numerical__mesh.html" title="alps::gf::numerical\l_mesh\&lt; T \&gt;" alt="" coords="227,122,357,163"/>
+<area shape="rect" id="node5" href="$classalps_1_1gf_1_1real__frequency__mesh.html" title="Mesh of real frequencies. " alt="" coords="193,188,391,215"/>
+</map>

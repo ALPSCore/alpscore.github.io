@@ -1,0 +1,15 @@
+<map id="alps/alea/variance.hpp" name="alps/alea/variance.hpp">
+<area shape="rect" id="node2" href="$autocorr_8hpp.html" title="alps/alea/autocorr.hpp" alt="" coords="328,80,479,107"/>
+<area shape="rect" id="node3" href="$stream__serializer_8hpp.html" title="alps/alea/plugin/stream\l_serializer.hpp" alt="" coords="5,155,161,196"/>
+<area shape="rect" id="node4" href="$propagation_8hpp.html" title="alps/alea/propagation.hpp" alt="" coords="565,162,735,189"/>
+<area shape="rect" id="node5" href="$transform_8hpp.html" title="alps/alea/transform.hpp" alt="" coords="771,319,929,345"/>
+<area shape="rect" id="node6" href="$alea_8hpp.html" title="alps/alea.hpp" alt="" coords="453,393,551,420"/>
+<area shape="rect" id="node10" href="$result_8hpp.html" title="alps/alea/result.hpp" alt="" coords="185,162,320,189"/>
+<area shape="rect" id="node13" href="$batch_8cpp.html" title="batch.cpp" alt="" coords="1000,80,1079,107"/>
+<area shape="rect" id="node14" href="$variance_8cpp.html" title="variance.cpp" alt="" coords="1103,80,1199,107"/>
+<area shape="rect" id="node12" href="$autocorr_8cpp.html" title="autocorr.cpp" alt="" coords="344,162,439,189"/>
+<area shape="rect" id="node8" href="$transformer_8hpp.html" title="alps/alea/transformer.hpp" alt="" coords="704,244,873,271"/>
+<area shape="rect" id="node9" href="$propagation_8cpp.html" title="propagation.cpp" alt="" coords="565,244,679,271"/>
+<area shape="rect" id="node7" href="$transform_8cpp.html" title="transform.cpp" alt="" coords="799,393,901,420"/>
+<area shape="rect" id="node11" href="$result_8cpp.html" title="result.cpp" alt="" coords="291,244,369,271"/>
+</map>

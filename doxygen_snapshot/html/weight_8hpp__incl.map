@@ -1,0 +1,23 @@
+<map id="alps/accumulators/feature/weight.hpp" name="alps/accumulators/feature/weight.hpp">
+<area shape="rect" id="node2" href="$feature_8hpp.html" title="alps/accumulators/feature.hpp" alt="" coords="1244,191,1441,218"/>
+<area shape="rect" id="node14" href="$stacktrace_8hpp.html" title="alps/utilities/stacktrace.hpp" alt="" coords="683,370,864,397"/>
+<area shape="rect" id="node36" href="$parameter_8hpp.html" title="alps/accumulators/parameter.hpp" alt="" coords="2927,102,3142,129"/>
+<area shape="rect" id="node38" href="$count_8hpp.html" title="alps/accumulators/feature\l/count.hpp" alt="" coords="1973,95,2145,136"/>
+<area shape="rect" id="node39" href="$archive_8hpp.html" title="alps/hdf5/archive.hpp" alt="" coords="2343,191,2489,218"/>
+<area shape="rect" id="node46" href="$short__print_8hpp.html" title="alps/utilities/short\l_print.hpp" alt="" coords="2514,184,2638,225"/>
+<area shape="rect" id="node4" href="$inf_8hpp.html" title="alps/numeric/inf.hpp" alt="" coords="2533,370,2672,397"/>
+<area shape="rect" id="node7" href="$check__size_8hpp.html" title="alps/numeric/check\l_size.hpp" alt="" coords="1002,273,1137,315"/>
+<area shape="rect" id="node20" href="$vector__functions_8hpp.html" title="alps/numeric/vector\l_functions.hpp" alt="" coords="1697,273,1833,315"/>
+<area shape="rect" id="node30" href="$boost__array__functions_8hpp.html" title="alps/numeric/boost\l_array_functions.hpp" alt="" coords="1271,273,1414,315"/>
+<area shape="rect" id="node32" href="$scalar_8hpp.html" title="alps/numeric/scalar.hpp" alt="" coords="96,370,256,397"/>
+<area shape="rect" id="node34" href="$is__scalar_8hpp.html" title="alps/type_traits/is\l_scalar.hpp" alt="" coords="231,273,356,315"/>
+<area shape="rect" id="node5" href="$type__wrapper_8hpp.html" title="alps/utilities/type\l_wrapper.hpp" alt="" coords="2859,459,2979,501"/>
+<area shape="rect" id="node8" href="$is__sequence_8hpp.html" title="alps/type_traits/is\l_sequence.hpp" alt="" coords="381,363,507,404"/>
+<area shape="rect" id="node9" href="$has__value__type_8hpp.html" title="alps/type_traits/has\l_value_type.hpp" alt="" coords="313,556,449,597"/>
+<area shape="rect" id="node15" href="$stringify_8hpp.html" title="alps/utilities/stringify.hpp" alt="" coords="807,467,974,493"/>
+<area shape="rect" id="node21" href="$special__functions_8hpp.html" title="alps/numeric/special\l_functions.hpp" alt="" coords="1725,363,1867,404"/>
+<area shape="rect" id="node33" href="$element__type_8hpp.html" title="alps/type_traits/element\l_type.hpp" alt="" coords="94,459,255,501"/>
+<area shape="rect" id="node40" href="$config_8hpp.html" title="alps/hdf5/config.hpp" alt="" coords="689,281,828,307"/>
+<area shape="rect" id="node41" href="$errors_8hpp.html" title="alps/hdf5/errors.hpp" alt="" coords="2739,281,2877,307"/>
+<area shape="rect" id="node42" href="$remove__cvr_8hpp.html" title="alps/utilities/remove\l_cvr.hpp" alt="" coords="2271,273,2409,315"/>
+</map>

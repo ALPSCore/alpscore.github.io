@@ -1,0 +1,4 @@
+<map id="alps::alea::deserializer" name="alps::alea::deserializer">
+<area shape="rect" id="node2" href="$classalps_1_1alea_1_1hdf5__serializer.html" title="{alps::alea::hdf5_serializer\n||+ hdf5_serializer()\l+ enter()\l+ exit()\l+ write()\l+ write()\l+ write()\l+ write()\l+ write()\l+ get_shape()\l+ read()\l+ read()\l+ read()\l+ read()\l+ read()\l+ ~hdf5_serializer()\l# do_write()\l# do_write()\l# do_read()\l# do_read()\l# get_path()\l# get_extent()\l}" alt="" coords="5,263,176,633"/>
+<area shape="rect" id="node3" href="$classalps_1_1alea_1_1stream__deserializer.html" title="{alps::alea::stream\l_deserializer\&lt; Archive \&gt;\n||+ stream_deserializer()\l+ enter()\l+ exit()\l+ get_shape()\l+ read()\l+ read()\l+ read()\l+ read()\l+ read()\l# do_read()\l}" alt="" coords="200,336,363,560"/>
+</map>

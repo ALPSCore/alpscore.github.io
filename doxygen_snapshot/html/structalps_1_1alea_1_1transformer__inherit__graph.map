@@ -1,0 +1,5 @@
+<map id="alps::alea::transformer&lt; T &gt;" name="alps::alea::transformer&lt; T &gt;">
+<area shape="rect" id="node2" href="$structalps_1_1alea_1_1linear__transformer.html" title="{alps::alea::linear\l_transformer\&lt; T \&gt;\n||+ linear_transformer()\l+ in_size()\l+ out_size()\l+ operator()()\l+ is_linear()\l}" alt="" coords="5,189,152,340"/>
+<area shape="rect" id="node3" href="$structalps_1_1alea_1_1scalar__binary__transformer.html" title="{alps::alea::scalar\l_binary_transformer\&lt; T \&gt;\n||+ scalar_binary_transformer()\l+ in_size()\l+ out_size()\l+ operator()()\l}" alt="" coords="176,197,368,333"/>
+<area shape="rect" id="node4" href="$structalps_1_1alea_1_1scalar__unary__transformer.html" title="{alps::alea::scalar\l_unary_transformer\&lt; T \&gt;\n||+ scalar_unary_transformer()\l+ in_size()\l+ out_size()\l+ operator()()\l}" alt="" coords="392,197,581,333"/>
+</map>

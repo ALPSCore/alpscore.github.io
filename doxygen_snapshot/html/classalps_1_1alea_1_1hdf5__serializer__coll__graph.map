@@ -1,0 +1,4 @@
+<map id="alps::alea::hdf5_serializer" name="alps::alea::hdf5_serializer">
+<area shape="rect" id="node2" href="$structalps_1_1alea_1_1serializer.html" title="{alps::alea::serializer\n||+ enter()\l+ exit()\l+ write()\l+ write()\l+ write()\l+ write()\l+ write()\l+ clone()\l+ ~serializer()\l}" alt="" coords="5,13,144,207"/>
+<area shape="rect" id="node3" href="$structalps_1_1alea_1_1deserializer.html" title="{alps::alea::deserializer\n||+ enter()\l+ exit()\l+ get_shape()\l+ read()\l+ read()\l+ read()\l+ read()\l+ read()\l+ clone()\l+ ~deserializer()\l}" alt="" coords="168,5,320,215"/>
+</map>

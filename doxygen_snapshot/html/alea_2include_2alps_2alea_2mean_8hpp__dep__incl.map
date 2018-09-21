@@ -1,0 +1,12 @@
+<map id="alps/alea/mean.hpp" name="alps/alea/mean.hpp">
+<area shape="rect" id="node2" href="$stream__serializer_8hpp.html" title="alps/alea/plugin/stream\l_serializer.hpp" alt="" coords="5,80,161,121"/>
+<area shape="rect" id="node3" href="$propagation_8hpp.html" title="alps/alea/propagation.hpp" alt="" coords="186,87,357,114"/>
+<area shape="rect" id="node4" href="$transform_8hpp.html" title="alps/alea/transform.hpp" alt="" coords="267,244,425,271"/>
+<area shape="rect" id="node5" href="$alea_8hpp.html" title="alps/alea.hpp" alt="" coords="446,319,545,345"/>
+<area shape="rect" id="node7" href="$transformer_8hpp.html" title="alps/alea/transformer.hpp" alt="" coords="237,169,407,196"/>
+<area shape="rect" id="node9" href="$result_8hpp.html" title="alps/alea/result.hpp" alt="" coords="533,87,668,114"/>
+<area shape="rect" id="node11" href="$alea_2src_2mean_8cpp.html" title="mean.cpp" alt="" coords="692,87,771,114"/>
+<area shape="rect" id="node8" href="$propagation_8cpp.html" title="propagation.cpp" alt="" coords="98,169,213,196"/>
+<area shape="rect" id="node6" href="$transform_8cpp.html" title="transform.cpp" alt="" coords="295,319,397,345"/>
+<area shape="rect" id="node10" href="$result_8cpp.html" title="result.cpp" alt="" coords="584,169,663,196"/>
+</map>

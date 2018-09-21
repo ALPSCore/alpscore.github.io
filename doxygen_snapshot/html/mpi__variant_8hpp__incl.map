@@ -1,0 +1,6 @@
+<map id="alps/params/mpi_variant.hpp" name="alps/params/mpi_variant.hpp">
+<area shape="rect" id="node2" href="$mpi__vector_8hpp.html" title="Header for object&#45;oriented interface to MPI for std::pair. " alt="" coords="359,80,475,121"/>
+<area shape="rect" id="node15" href="$mpi__pair_8hpp.html" title="alps/utilities/mpi\l_pair.hpp" alt="" coords="499,80,615,121"/>
+<area shape="rect" id="node17" href="$serialize__variant_8hpp.html" title="Header for boost::variant serialization. " alt="" coords="789,80,934,121"/>
+<area shape="rect" id="node4" href="$utilities_2include_2alps_2utilities_2mpi_8hpp.html" title="Header for object&#45;oriented interface to MPI (similar to boost::mpi) " alt="" coords="224,169,365,196"/>
+</map>
