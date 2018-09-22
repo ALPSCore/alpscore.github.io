@@ -1,0 +1,20 @@
+<map id="alps/numeric/rectangularize.hpp" name="alps/numeric/rectangularize.hpp">
+<area shape="rect" id="node2" href="$binning__analysis_8hpp.html" title="alps/accumulators/feature\l/binning_analysis.hpp" alt="" coords="912,80,1084,121"/>
+<area shape="rect" id="node3" href="$wrappers_8hpp.html" title="alps/accumulators/wrappers.hpp" alt="" coords="670,169,881,196"/>
+<area shape="rect" id="node18" href="$binning__analysis_8cpp.html" title="feature/binning_analysis.cpp" alt="" coords="905,169,1091,196"/>
+<area shape="rect" id="node19" href="$max__num__binning_8cpp.html" title="feature/max_num_binning.cpp" alt="" coords="1116,169,1312,196"/>
+<area shape="rect" id="node4" href="$accumulator_8hpp.html" title="alps/accumulators/accumulator.hpp" alt="" coords="549,251,777,278"/>
+<area shape="rect" id="node17" href="$weight__holder_8hpp.html" title="alps/accumulators/feature\l/weight_holder.hpp" alt="" coords="801,244,973,285"/>
+<area shape="rect" id="node5" href="$namedaccumulators_8hpp.html" title="alps/accumulators/namedaccumulators.hpp" alt="" coords="294,333,569,360"/>
+<area shape="rect" id="node6" href="$accumulators_8hpp.html" title="alps/accumulators.hpp" alt="" coords="161,408,315,435"/>
+<area shape="rect" id="node7" href="$wrapper__set_8cpp.html" title="wrapper_set.cpp" alt="" coords="559,483,677,509"/>
+<area shape="rect" id="node13" href="$accumulators_8cpp.html" title="accumulators.cpp" alt="" coords="527,408,653,435"/>
+<area shape="rect" id="node15" href="$accumulator__wrapper_8cpp.html" title="accumulator_wrapper.cpp" alt="" coords="727,333,898,360"/>
+<area shape="rect" id="node16" href="$result__wrapper_8cpp.html" title="result_wrapper.cpp" alt="" coords="923,333,1055,360"/>
+<area shape="rect" id="node14" href="$namedaccumulators_8cpp.html" title="namedaccumulators.cpp" alt="" coords="339,408,503,435"/>
+<area shape="rect" id="node8" href="$wrapper__set__hdf5_8cpp.html" title="wrapper_set_hdf5.cpp" alt="" coords="5,483,156,509"/>
+<area shape="rect" id="node9" href="$api_8hpp.html" title="alps/mc/api.hpp" alt="" coords="181,483,295,509"/>
+<area shape="rect" id="node11" href="$mcbase_8hpp.html" title="alps/mc/mcbase.hpp" alt="" coords="320,483,463,509"/>
+<area shape="rect" id="node10" href="$api_8cpp.html" title="api.cpp" alt="" coords="206,557,270,584"/>
+<area shape="rect" id="node12" href="$mcbase_8cpp.html" title="mcbase.cpp" alt="" coords="345,557,438,584"/>
+</map>

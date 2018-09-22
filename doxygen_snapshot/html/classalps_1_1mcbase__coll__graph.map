@@ -1,0 +1,6 @@
+<map id="alps::mcbase" name="alps::mcbase">
+<area shape="rect" id="node2" href="$structalps_1_1random01.html" title="{alps::random01\n||+ random01()\l+ save()\l+ load()\l}" alt="" coords="34,411,145,517"/>
+<area shape="rect" id="node4" href="$classalps_1_1accumulators_1_1impl_1_1wrapper__set.html" title="{alps::accumulators\l::impl::wrapper_set\&lt; T \&gt;\n||+ wrapper_set()\l+ wrapper_set()\l+ wrapper_set()\l+ operator[]()\l+ operator[]()\l+ has()\l+ insert()\l+ size()\l+ save()\l+ load()\land 8 more...\l+ register_serializable\l_type_nolock()\l+ register_serializable_type()\l}" alt="" coords="169,323,359,605"/>
+<area shape="rect" id="node5" href="$classalps_1_1params__ns_1_1params.html" title="Parse sectioned INI file or HDF5 or command line, provide the results as dictionary. " alt="" coords="383,352,553,576"/>
+<area shape="rect" id="node6" href="$classalps_1_1params__ns_1_1dictionary.html" title="Python&#45;like dictionary. " alt="" coords="377,5,559,273"/>
+</map>

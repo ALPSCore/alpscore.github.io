@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classalps_1_1accumulators_1_1impl_1_1DerivedWrapper.html" title="alps::accumulators\l::impl::DerivedWrapper\l\&lt; A, max_num_binning_tag,\l impl::DerivedWrapper\&lt; A,\l binning_analysis_tag, impl\l::DerivedWrapper\&lt; A, error\l_tag, impl::DerivedWrapper\&lt;\l A, mean_tag, impl::DerivedWrapper\l\&lt; A, count_tag, detail::foundation\l_wrapper\&lt; A \&gt; \&gt; \&gt; \&gt; \&gt; \&gt;" alt="" coords="5,5,240,164"/>
+<area shape="rect" id="node2" href="$classalps_1_1accumulators_1_1derived__wrapper.html" title="alps::accumulators\l::derived_wrapper\&lt; A \&gt;" alt="" coords="288,64,447,105"/>
+<area shape="rect" id="node3" href="$classalps_1_1accumulators_1_1derived__accumulator__wrapper.html" title="alps::accumulators\l::derived_accumulator\l_wrapper\&lt; A \&gt;" alt="" coords="518,21,669,77"/>
+<area shape="rect" id="node4" href="$classalps_1_1accumulators_1_1derived__result__wrapper.html" title="alps::accumulators\l::derived_result_wrapper\&lt; A \&gt;" alt="" coords="495,100,692,141"/>
+</map>

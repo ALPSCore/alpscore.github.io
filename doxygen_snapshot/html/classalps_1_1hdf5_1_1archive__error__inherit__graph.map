@@ -1,0 +1,12 @@
+<map id="alps::hdf5::archive_error" name="alps::hdf5::archive_error">
+<area shape="rect" id="node4" href="$classalps_1_1hdf5_1_1archive__closed.html" title="{alps::hdf5::archive\l_closed\n||+ archive_closed()\l}" alt="" coords="5,396,135,488"/>
+<area shape="rect" id="node5" href="$classalps_1_1hdf5_1_1archive__not__found.html" title="{alps::hdf5::archive\l_not_found\n||+ archive_not_found()\l}" alt="" coords="159,396,307,488"/>
+<area shape="rect" id="node6" href="$classalps_1_1hdf5_1_1archive__opened.html" title="{alps::hdf5::archive\l_opened\n||+ archive_opened()\l}" alt="" coords="331,396,465,488"/>
+<area shape="rect" id="node7" href="$classalps_1_1hdf5_1_1invalid__path.html" title="{alps::hdf5::invalid_path\n||+ invalid_path()\l}" alt="" coords="489,403,645,481"/>
+<area shape="rect" id="node8" href="$classalps_1_1hdf5_1_1path__not__found.html" title="{alps::hdf5::path_not\l_found\n||+ path_not_found()\l}" alt="" coords="669,396,807,488"/>
+<area shape="rect" id="node9" href="$classalps_1_1hdf5_1_1wrong__dimensions.html" title="{alps::hdf5::wrong_dimensions\n||+ wrong_dimensions()\l}" alt="" coords="831,403,1026,481"/>
+<area shape="rect" id="node10" href="$classalps_1_1hdf5_1_1wrong__mode.html" title="{alps::hdf5::wrong_mode\n||+ wrong_mode()\l}" alt="" coords="1051,403,1212,481"/>
+<area shape="rect" id="node11" href="$classalps_1_1hdf5_1_1wrong__type.html" title="{alps::hdf5::wrong_type\n||+ wrong_type()\l}" alt="" coords="1237,403,1391,481"/>
+<area shape="rect" id="node2" title="STL class. " alt="" coords="591,131,715,208"/>
+<area shape="rect" id="node3" title="STL class. " alt="" coords="601,5,705,83"/>
+</map>

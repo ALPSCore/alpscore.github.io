@@ -1,0 +1,5 @@
+<map id="alps::accumulators::derived_result_wrapper&lt; A &gt;" name="alps::accumulators::derived_result_wrapper&lt; A &gt;">
+<area shape="rect" id="node2" href="$classalps_1_1accumulators_1_1derived__wrapper.html" title="{alps::accumulators\l::derived_wrapper\&lt; A \&gt;\n||+ derived_wrapper()\l+ derived_wrapper()\l+ extract()\l+ extract()\l+ operator()()\l+ save()\l+ load()\l+ print()\l+ reset()\l+ merge()\l}" alt="" coords="43,536,202,760"/>
+<area shape="rect" id="node3" href="$classalps_1_1accumulators_1_1impl_1_1DerivedWrapper.html" title="{alps::accumulators\l::impl::DerivedWrapper\l\&lt; A, max_num_binning_tag,\l impl::DerivedWrapper\&lt; A,\l binning_analysis_tag, impl\l::DerivedWrapper\&lt; A, error\l_tag, impl::DerivedWrapper\&lt;\l A, mean_tag, impl::DerivedWrapper\l\&lt; A, count_tag, detail::foundation\l_wrapper\&lt; A \&gt; \&gt; \&gt; \&gt; \&gt; \&gt;\n||}" alt="" coords="5,277,240,487"/>
+<area shape="rect" id="node4" href="$classalps_1_1accumulators_1_1impl_1_1DerivedWrapper.html" title="{alps::accumulators\l::impl::DerivedWrapper\l\&lt; A, F, B \&gt;\n||}" alt="" coords="45,5,201,112"/>
+</map>

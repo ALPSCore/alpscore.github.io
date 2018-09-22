@@ -1,0 +1,18 @@
+<map id="alps/accumulators/feature/max_num_binning.hpp" name="alps/accumulators/feature/max_num_binning.hpp">
+<area shape="rect" id="node2" href="$wrappers_8hpp.html" title="alps/accumulators/wrappers.hpp" alt="" coords="670,95,881,121"/>
+<area shape="rect" id="node17" href="$max__num__binning_8cpp.html" title="feature/max_num_binning.cpp" alt="" coords="905,95,1101,121"/>
+<area shape="rect" id="node3" href="$accumulator_8hpp.html" title="alps/accumulators/accumulator.hpp" alt="" coords="549,177,777,203"/>
+<area shape="rect" id="node16" href="$weight__holder_8hpp.html" title="alps/accumulators/feature\l/weight_holder.hpp" alt="" coords="801,169,973,211"/>
+<area shape="rect" id="node4" href="$namedaccumulators_8hpp.html" title="alps/accumulators/namedaccumulators.hpp" alt="" coords="294,259,569,285"/>
+<area shape="rect" id="node5" href="$accumulators_8hpp.html" title="alps/accumulators.hpp" alt="" coords="161,333,315,360"/>
+<area shape="rect" id="node6" href="$wrapper__set_8cpp.html" title="wrapper_set.cpp" alt="" coords="559,408,677,435"/>
+<area shape="rect" id="node12" href="$accumulators_8cpp.html" title="accumulators.cpp" alt="" coords="527,333,653,360"/>
+<area shape="rect" id="node14" href="$accumulator__wrapper_8cpp.html" title="accumulator_wrapper.cpp" alt="" coords="727,259,898,285"/>
+<area shape="rect" id="node15" href="$result__wrapper_8cpp.html" title="result_wrapper.cpp" alt="" coords="923,259,1055,285"/>
+<area shape="rect" id="node13" href="$namedaccumulators_8cpp.html" title="namedaccumulators.cpp" alt="" coords="339,333,503,360"/>
+<area shape="rect" id="node7" href="$wrapper__set__hdf5_8cpp.html" title="wrapper_set_hdf5.cpp" alt="" coords="5,408,156,435"/>
+<area shape="rect" id="node8" href="$api_8hpp.html" title="alps/mc/api.hpp" alt="" coords="181,408,295,435"/>
+<area shape="rect" id="node10" href="$mcbase_8hpp.html" title="alps/mc/mcbase.hpp" alt="" coords="320,408,463,435"/>
+<area shape="rect" id="node9" href="$api_8cpp.html" title="api.cpp" alt="" coords="206,483,270,509"/>
+<area shape="rect" id="node11" href="$mcbase_8cpp.html" title="mcbase.cpp" alt="" coords="345,483,438,509"/>
+</map>

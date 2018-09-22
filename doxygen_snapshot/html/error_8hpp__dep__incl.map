@@ -1,0 +1,21 @@
+<map id="alps/accumulators/feature/error.hpp" name="alps/accumulators/feature/error.hpp">
+<area shape="rect" id="node2" href="$max__num__binning_8hpp.html" title="alps/accumulators/feature\l/max_num_binning.hpp" alt="" coords="804,95,976,136"/>
+<area shape="rect" id="node3" href="$wrappers_8hpp.html" title="alps/accumulators/wrappers.hpp" alt="" coords="661,184,871,211"/>
+<area shape="rect" id="node19" href="$binning__analysis_8cpp.html" title="feature/binning_analysis.cpp" alt="" coords="1001,102,1187,129"/>
+<area shape="rect" id="node20" href="$error_8cpp.html" title="feature/error.cpp" alt="" coords="1211,102,1329,129"/>
+<area shape="rect" id="node18" href="$max__num__binning_8cpp.html" title="feature/max_num_binning.cpp" alt="" coords="896,184,1092,211"/>
+<area shape="rect" id="node4" href="$accumulator_8hpp.html" title="alps/accumulators/accumulator.hpp" alt="" coords="540,266,768,293"/>
+<area shape="rect" id="node17" href="$weight__holder_8hpp.html" title="alps/accumulators/feature\l/weight_holder.hpp" alt="" coords="792,259,964,300"/>
+<area shape="rect" id="node5" href="$namedaccumulators_8hpp.html" title="alps/accumulators/namedaccumulators.hpp" alt="" coords="294,348,569,375"/>
+<area shape="rect" id="node6" href="$accumulators_8hpp.html" title="alps/accumulators.hpp" alt="" coords="161,423,315,449"/>
+<area shape="rect" id="node7" href="$wrapper__set_8cpp.html" title="wrapper_set.cpp" alt="" coords="559,497,677,524"/>
+<area shape="rect" id="node13" href="$accumulators_8cpp.html" title="accumulators.cpp" alt="" coords="527,423,653,449"/>
+<area shape="rect" id="node15" href="$accumulator__wrapper_8cpp.html" title="accumulator_wrapper.cpp" alt="" coords="727,348,898,375"/>
+<area shape="rect" id="node16" href="$result__wrapper_8cpp.html" title="result_wrapper.cpp" alt="" coords="923,348,1055,375"/>
+<area shape="rect" id="node14" href="$namedaccumulators_8cpp.html" title="namedaccumulators.cpp" alt="" coords="339,423,503,449"/>
+<area shape="rect" id="node8" href="$wrapper__set__hdf5_8cpp.html" title="wrapper_set_hdf5.cpp" alt="" coords="5,497,156,524"/>
+<area shape="rect" id="node9" href="$api_8hpp.html" title="alps/mc/api.hpp" alt="" coords="181,497,295,524"/>
+<area shape="rect" id="node11" href="$mcbase_8hpp.html" title="alps/mc/mcbase.hpp" alt="" coords="320,497,463,524"/>
+<area shape="rect" id="node10" href="$api_8cpp.html" title="api.cpp" alt="" coords="206,572,270,599"/>
+<area shape="rect" id="node12" href="$mcbase_8cpp.html" title="mcbase.cpp" alt="" coords="345,572,438,599"/>
+</map>

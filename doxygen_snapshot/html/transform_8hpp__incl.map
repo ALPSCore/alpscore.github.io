@@ -1,0 +1,19 @@
+<map id="alps/alea/transform.hpp" name="alps/alea/transform.hpp">
+<area shape="rect" id="node2" href="$core_8hpp.html" title="alps/alea/core.hpp" alt="" coords="1095,543,1223,569"/>
+<area shape="rect" id="node18" href="$computed_8hpp.html" title="alps/alea/computed.hpp" alt="" coords="1008,379,1168,405"/>
+<area shape="rect" id="node21" href="$alea_2include_2alps_2alea_2mean_8hpp.html" title="alps/alea/mean.hpp" alt="" coords="857,304,991,331"/>
+<area shape="rect" id="node23" href="$variance_8hpp.html" title="alps/alea/variance.hpp" alt="" coords="433,304,585,331"/>
+<area shape="rect" id="node26" href="$covariance_8hpp.html" title="alps/alea/covariance.hpp" alt="" coords="666,304,833,331"/>
+<area shape="rect" id="node27" href="$batch_8hpp.html" title="alps/alea/batch.hpp" alt="" coords="1015,304,1150,331"/>
+<area shape="rect" id="node29" href="$propagation_8hpp.html" title="alps/alea/propagation.hpp" alt="" coords="664,155,835,181"/>
+<area shape="rect" id="node31" href="$convert_8hpp.html" title="alps/alea/convert.hpp" alt="" coords="1589,379,1736,405"/>
+<area shape="rect" id="node34" href="$transformer_8hpp.html" title="alps/alea/transformer.hpp" alt="" coords="1226,80,1395,107"/>
+<area shape="rect" id="node11" href="$complex__op_8hpp.html" title="alps/alea/complex_op.hpp" alt="" coords="429,617,603,644"/>
+<area shape="rect" id="node20" href="$util_8hpp.html" title="alps/alea/util.hpp" alt="" coords="568,461,688,487"/>
+<area shape="rect" id="node24" href="$bundle_8hpp.html" title="alps/alea/bundle.hpp" alt="" coords="597,379,739,405"/>
+<area shape="rect" id="node25" href="$var__strategy_8hpp.html" title="alps/alea/var_strategy.hpp" alt="" coords="297,379,471,405"/>
+<area shape="rect" id="node28" href="$galois_8hpp.html" title="alps/alea/internal\l/galois.hpp" alt="" coords="1344,453,1464,495"/>
+<area shape="rect" id="node30" href="$autocorr_8hpp.html" title="alps/alea/autocorr.hpp" alt="" coords="434,229,585,256"/>
+<area shape="rect" id="node32" href="$internal_2util_8hpp.html" title="alps/alea/internal\l/util.hpp" alt="" coords="1784,453,1904,495"/>
+<area shape="rect" id="node33" href="$joined_8hpp.html" title="alps/alea/internal\l/joined.hpp" alt="" coords="1589,453,1709,495"/>
+</map>
