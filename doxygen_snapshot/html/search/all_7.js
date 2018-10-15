@@ -27,6 +27,8 @@ var searchData=
   ['get_5fjackknife_5fbins',['get_jackknife_bins',['../classalps_1_1accumulators_1_1impl_1_1Result_3_01T_00_01max__num__binning__tag_00_01B_01_4.html#a19220abacb059aedb910643b814c65e6',1,'alps::accumulators::impl::Result&lt; T, max_num_binning_tag, B &gt;']]],
   ['get_5fmax',['get_max',['../structalps_1_1alea_1_1reducer.html#afb4b7ae8d3a4ea4cba84d868a5c83d7a',1,'alps::alea::reducer::get_max()'],['../structalps_1_1alea_1_1mpi__reducer.html#a518609e25fa7a07be01e894535ee0857',1,'alps::alea::mpi_reducer::get_max()']]],
   ['get_5fmpi_5fdatatype',['get_mpi_datatype',['../namespacealps_1_1mpi.html#a4d045d914005e948c2bc0a1d5e10de45',1,'alps::mpi']]],
+  ['get_5fname',['get_name',['../classalps_1_1params__ns_1_1params_1_1archive__conflict.html#ab786dbbd547cdf8bc86383867806914e',1,'alps::params_ns::params::archive_conflict']]],
+  ['get_5fnames',['get_names',['../classalps_1_1params__ns_1_1params_1_1archive__conflict.html#a5c34d3aec2dc4f56e2dc419453c7bd75',1,'alps::params_ns::params::archive_conflict']]],
   ['get_5forigin_5fname',['get_origin_name',['../classalps_1_1params__ns_1_1params.html#a13f2f5c0a2ef562fd458713d38f6007a',1,'alps::params_ns::params']]],
   ['get_5fpath',['get_path',['../classalps_1_1alea_1_1hdf5__serializer.html#ad5890686a954ab3ba5238445223f04a5',1,'alps::alea::hdf5_serializer']]],
   ['get_5fpointer',['get_pointer',['../namespacealps_1_1hdf5.html#a7421637e2fba50ee6eed3901c6bdadd7',1,'alps::hdf5::get_pointer(T &amp;value)'],['../namespacealps_1_1hdf5.html#ad686eb7971b984c3fc5d1737cd978750',1,'alps::hdf5::get_pointer(T const &amp;value)']]],

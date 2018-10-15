@@ -116,8 +116,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Include dependency graph for mpi.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="utilities_2include_2alps_2utilities_2mpi_8hpp__incl.png" border="0" usemap="#alps_2utilities_2mpi_8hpp" alt=""/></div>
-<map name="alps_2utilities_2mpi_8hpp" id="alps_2utilities_2mpi_8hpp">
-</map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -142,6 +140,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulation of an MPI communicator and some communicator-related operations.  <a href="classalps_1_1mpi_1_1communicator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mpi_1_1environment.html">alps::mpi::environment</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI environment RAII class.  <a href="classalps_1_1mpi_1_1environment.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mpi_1_1maximum.html">alps::mpi::maximum&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class-holder for reduction operations (and a functor) for type T.  <a href="classalps_1_1mpi_1_1maximum.html#details">More...</a><br /></td></tr>
@@ -190,7 +189,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:aed832447cf771aa4d22d61796d6d2645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Broadcasts value <code>val</code> of a primitive type <code>T</code> on communicator <code>comm</code> with root <code>root</code>  <a href="namespacealps_1_1mpi.html#aed832447cf771aa4d22d61796d6d2645">More...</a><br /></td></tr>
 <tr class="separator:aed832447cf771aa4d22d61796d6d2645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1f8bfa5db85c7e04fdfabdea76f8bc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealps_1_1mpi.html#ae1f8bfa5db85c7e04fdfabdea76f8bc9">alps::mpi::broadcast</a> (const communicator &amp;comm, std::string &amp;val, int root)</td></tr>
-<tr class="memdesc:ae1f8bfa5db85c7e04fdfabdea76f8bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI_BCast of a single value: overload for std::string.  <a href="namespacealps_1_1mpi.html#ae1f8bfa5db85c7e04fdfabdea76f8bc9">More...</a><br /></td></tr>
+<tr class="memdesc:ae1f8bfa5db85c7e04fdfabdea76f8bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI_BCast of a single value: overload for <code>std::string</code>  <a href="namespacealps_1_1mpi.html#ae1f8bfa5db85c7e04fdfabdea76f8bc9">More...</a><br /></td></tr>
 <tr class="separator:ae1f8bfa5db85c7e04fdfabdea76f8bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d045d914005e948c2bc0a1d5e10de45"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a4d045d914005e948c2bc0a1d5e10de45"><td class="memTemplItemLeft" align="right" valign="top">MPI_Datatype&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1mpi.html#a4d045d914005e948c2bc0a1d5e10de45">alps::mpi::get_mpi_datatype</a> (const T &amp;)</td></tr>
@@ -198,19 +197,19 @@ Functions</h2></td></tr>
 <tr class="separator:a4d045d914005e948c2bc0a1d5e10de45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa50b21521981d17bdd8137de0f625cda"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa50b21521981d17bdd8137de0f625cda"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1mpi.html#aa50b21521981d17bdd8137de0f625cda">alps::mpi::all_gather</a> (const communicator &amp;comm, const T &amp;in_val, std::vector&lt; T &gt; &amp;out_vals)</td></tr>
-<tr class="memdesc:aa50b21521981d17bdd8137de0f625cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs MPI_Allgather() for primitive type T  <a href="namespacealps_1_1mpi.html#aa50b21521981d17bdd8137de0f625cda">More...</a><br /></td></tr>
+<tr class="memdesc:aa50b21521981d17bdd8137de0f625cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs <code>MPI_Allgather()</code> for primitive type T  <a href="namespacealps_1_1mpi.html#aa50b21521981d17bdd8137de0f625cda">More...</a><br /></td></tr>
 <tr class="separator:aa50b21521981d17bdd8137de0f625cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42073157522374902d40fa028503998d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename OP &gt; </td></tr>
 <tr class="memitem:a42073157522374902d40fa028503998d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1mpi.html#a42073157522374902d40fa028503998d">alps::mpi::all_reduce</a> (const <a class="el" href="classalps_1_1mpi_1_1communicator.html">alps::mpi::communicator</a> &amp;comm, const T *val, int n, T *out_val, const OP &amp;)</td></tr>
-<tr class="memdesc:a42073157522374902d40fa028503998d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs MPI_Allreduce for array of a primitive type, T[n].  <a href="namespacealps_1_1mpi.html#a42073157522374902d40fa028503998d">More...</a><br /></td></tr>
+<tr class="memdesc:a42073157522374902d40fa028503998d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs <code>MPI_Allreduce</code> for array of a primitive type, T[n].  <a href="namespacealps_1_1mpi.html#a42073157522374902d40fa028503998d">More...</a><br /></td></tr>
 <tr class="separator:a42073157522374902d40fa028503998d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fe4a534ab722d67ae6cdc5b4d784015"><td class="memTemplParams" colspan="2">template&lt;typename T , typename OP &gt; </td></tr>
 <tr class="memitem:a9fe4a534ab722d67ae6cdc5b4d784015"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1mpi.html#a9fe4a534ab722d67ae6cdc5b4d784015">alps::mpi::all_reduce</a> (const <a class="el" href="classalps_1_1mpi_1_1communicator.html">alps::mpi::communicator</a> &amp;comm, const T &amp;val, T &amp;out_val, const OP &amp;op)</td></tr>
-<tr class="memdesc:a9fe4a534ab722d67ae6cdc5b4d784015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs MPI_Allreduce for a primitive type T.  <a href="namespacealps_1_1mpi.html#a9fe4a534ab722d67ae6cdc5b4d784015">More...</a><br /></td></tr>
+<tr class="memdesc:a9fe4a534ab722d67ae6cdc5b4d784015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs <code>MPI_Allreduce</code> for a primitive type T.  <a href="namespacealps_1_1mpi.html#a9fe4a534ab722d67ae6cdc5b4d784015">More...</a><br /></td></tr>
 <tr class="separator:a9fe4a534ab722d67ae6cdc5b4d784015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23253fcd9f7a0cd115c59e07eb4813cd"><td class="memTemplParams" colspan="2">template&lt;typename T , typename OP &gt; </td></tr>
 <tr class="memitem:a23253fcd9f7a0cd115c59e07eb4813cd"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacealps_1_1mpi.html#a23253fcd9f7a0cd115c59e07eb4813cd">alps::mpi::all_reduce</a> (const <a class="el" href="classalps_1_1mpi_1_1communicator.html">alps::mpi::communicator</a> &amp;comm, const T &amp;val, const OP &amp;op)</td></tr>
-<tr class="memdesc:a23253fcd9f7a0cd115c59e07eb4813cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs MPI_Allreduce for a primitive type T.  <a href="namespacealps_1_1mpi.html#a23253fcd9f7a0cd115c59e07eb4813cd">More...</a><br /></td></tr>
+<tr class="memdesc:a23253fcd9f7a0cd115c59e07eb4813cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs <code>MPI_Allreduce</code> for a primitive type T.  <a href="namespacealps_1_1mpi.html#a23253fcd9f7a0cd115c59e07eb4813cd">More...</a><br /></td></tr>
 <tr class="separator:a23253fcd9f7a0cd115c59e07eb4813cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -221,7 +220,7 @@ Functions</h2></td></tr>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 21 2018 13:16:10 for ALPSCore reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 14 2018 12:18:31 for ALPSCore reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

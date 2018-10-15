@@ -126,6 +126,9 @@ Collaboration diagram for alps::params_ns::params:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1params__ns_1_1params_1_1archive__conflict.html">archive_conflict</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception type: attempt to restore from 2 archives.  <a href="classalps_1_1params__ns_1_1params_1_1archive__conflict.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structalps_1_1params__ns_1_1params_1_1not__restored.html">not_restored</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception type: the object was not restored from archive.  <a href="structalps_1_1params__ns_1_1params_1_1not__restored.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,7 +145,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac84825798d93ce1f47dcc7151aa66df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor from command line and parameter files.  <a href="#ac84825798d93ce1f47dcc7151aa66df3">More...</a><br /></td></tr>
 <tr class="separator:ac84825798d93ce1f47dcc7151aa66df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add78c89ed9573ae4703bc793d2a6ef09"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1params__ns_1_1params.html#add78c89ed9573ae4703bc793d2a6ef09">get_argv0</a> () const </td></tr>
-<tr class="memdesc:add78c89ed9573ae4703bc793d2a6ef09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to argv[0] (returns emty string if unknown)  <a href="#add78c89ed9573ae4703bc793d2a6ef09">More...</a><br /></td></tr>
+<tr class="memdesc:add78c89ed9573ae4703bc793d2a6ef09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to argv[0] (returns empty string if unknown)  <a href="#add78c89ed9573ae4703bc793d2a6ef09">More...</a><br /></td></tr>
 <tr class="separator:add78c89ed9573ae4703bc793d2a6ef09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae05193a92222e9eb5a6978d38487159f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1params__ns_1_1params.html#ae05193a92222e9eb5a6978d38487159f">get_ini_name</a> (int n) const </td></tr>
 <tr class="memdesc:ae05193a92222e9eb5a6978d38487159f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to ini file names (if any); returns empty string if out of range.  <a href="#ae05193a92222e9eb5a6978d38487159f">More...</a><br /></td></tr>
@@ -339,7 +342,7 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00065">65</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00105">105</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -379,12 +382,28 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">argc</td><td>Number of command line arguments (as in <code>main(int argc, char** argv)</code>) </td></tr>
     <tr><td class="paramname">argv</td><td>Array of pointers to command line arguments (as in <code>main(int argc, char** argv)</code>) </td></tr>
-    <tr><td class="paramname">hdf5_path</td><td>path to HDF5 dataset containing the saved parameter object (NULL if this functionality is not needed) </td></tr>
+    <tr><td class="paramname">hdf5_path</td><td>path to HDF5 dataset containing the saved parameter object (NULL if this functionality is not needed)</td></tr>
   </table>
   </dd>
 </dl>
+<p>The parameters are supplied in the <code>--key=value</code> format; the double dash (<code>--</code>) can be shortened to a single dash (<code>-</code>) or omitted. The <code>=value</code> part may be omitted, in which case it is interpreted as <code>=false</code>, and the key must be preceded by at least one dash (<code>-</code>).</p>
+<p>If an argument is not recognized as a key-value pair (that is, it does not contain the <code>=</code> character and does not start with <code>-</code>) it is interpreted as a file name.</p>
+<p>If a double-dash argument (<code>--</code>) is encountered, it is skipped, and all arguments following it are interpreted as file names.</p>
+<p>The files are either HDF5-formatted archives or INI-formatted files. INI file can be sectoned by <code>[section]</code> headers: the key <code>some_key</code> in section <code>[some_section]</code> is interpreted as a key <code>some_section.some_key</code>.</p>
+<p>The command line is parsed in the following way:</p>
+<ol type="1">
+<li>The whole command line is scanned.</li>
+<li>If an (HDF5) archive file name is present, the parameters object is loaded from the archive.</li>
+<li>If there is another archive file name, an exception of type <code>alps::params::archive_conflict</code> is thrown.</li>
+<li>All INI files are read in the order given.</li>
+<li>The command line arguments are read.<ol type="a">
+<li>If a key is encountered more than once, the latter occurence silently overrides the former. Thus, the values supplied in the command line override values from INI files and archives.</li>
+<li>If a key was present and <code>define&lt;T&gt;()</code>d in the archive, the new value must be parsable as type <code>T</code>; otherwise an exception of type <code>alps::params_ns::dictionary::value_mismatch</code> is thrown. </li>
+</ol>
+</li>
+</ol>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00074">74</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00114">114</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -521,7 +540,7 @@ template&lt;typename T &gt; </div>
 
 <p>Defines a flag (boolean option with default of <code>false</code>) </p>
 
-<p>Definition at line <a class="el" href="params_8hpp_source.html#l00230">230</a> of file <a class="el" href="params_8hpp_source.html">params.hpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8hpp_source.html#l00290">290</a> of file <a class="el" href="params_8hpp_source.html">params.hpp</a>.</p>
 
 </div>
 </div>
@@ -570,7 +589,7 @@ template&lt;typename T &gt; </div>
 
 <p>Sets a description for the help message and introduces "--help" flag (if not already defined) </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00109">109</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00149">149</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -589,7 +608,7 @@ template&lt;typename T &gt; </div>
 
 <p>Convenience method: returns the archive name the object has been restored from, or throws. </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00103">103</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00143">143</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -606,9 +625,9 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Access to argv[0] (returns emty string if unknown) </p>
+<p>Access to argv[0] (returns empty string if unknown) </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00098">98</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00138">138</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -628,7 +647,7 @@ template&lt;typename T &gt; </div>
 
 <p>Returns a string describing the parameter (or an empty string) </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00283">283</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00349">349</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -648,7 +667,7 @@ template&lt;typename T &gt; </div>
 
 <p>Access to ini file names (if any); returns empty string if out of range. </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00092">92</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00132">132</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -667,7 +686,7 @@ template&lt;typename T &gt; </div>
 
 <p>Returns the number of ini file names. </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00087">87</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00127">127</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -723,7 +742,7 @@ template&lt;typename T &gt; </div>
 
 <p>True if there are missing or wrong-type parameters. </p>
 
-<p>Definition at line <a class="el" href="params_8hpp_source.html#l00183">183</a> of file <a class="el" href="params_8hpp_source.html">params.hpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8hpp_source.html#l00243">243</a> of file <a class="el" href="params_8hpp_source.html">params.hpp</a>.</p>
 
 </div>
 </div>
@@ -743,7 +762,7 @@ template&lt;typename T &gt; </div>
 
 <p>True if there are missing or wrong-type parameters; prints the message to that effect. </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00202">202</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00242">242</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -763,7 +782,7 @@ template&lt;typename T &gt; </div>
 
 <p>True if there are parameters supplied but not defined; prints them out. </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00139">139</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00179">179</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -800,7 +819,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00134">134</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00174">174</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -819,7 +838,7 @@ template&lt;typename T &gt; </div>
 
 <p>True if user requested help. </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00190">190</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00230">230</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -839,7 +858,7 @@ template&lt;typename T &gt; </div>
 
 <p>True if user requested help; print it to the supplied stream. </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00195">195</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00235">235</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -866,7 +885,7 @@ template&lt;typename T &gt; </div>
 
 <p>Conveninece method: true if the object was restored from an archive. </p>
 
-<p>Definition at line <a class="el" href="params_8hpp_source.html#l00174">174</a> of file <a class="el" href="params_8hpp_source.html">params.hpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8hpp_source.html#l00234">234</a> of file <a class="el" href="params_8hpp_source.html">params.hpp</a>.</p>
 
 </div>
 </div>
@@ -886,7 +905,7 @@ template&lt;typename T &gt; </div>
 
 <p>Loads parameter object form an archive. </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00332">332</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00398">398</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -913,7 +932,7 @@ template&lt;typename T &gt; </div>
 
 <p>No-errors status. </p>
 
-<p>Definition at line <a class="el" href="params_8hpp_source.html#l00180">180</a> of file <a class="el" href="params_8hpp_source.html">params.hpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8hpp_source.html#l00240">240</a> of file <a class="el" href="params_8hpp_source.html">params.hpp</a>.</p>
 
 </div>
 </div>
@@ -933,7 +952,7 @@ template&lt;typename T &gt; </div>
 
 <p>Returns true if the objects are identical. </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00289">289</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00355">355</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -954,7 +973,7 @@ template&lt;typename T &gt; </div>
 <p>Print help to the given stream. </p>
 <dl class="section return"><dt>Returns</dt><dd>the stream </dd></dl>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00144">144</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00184">184</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -974,7 +993,7 @@ template&lt;typename T &gt; </div>
 
 <p>Saves parameter object to an archive. </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00304">304</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00370">370</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -1041,7 +1060,7 @@ template&lt;typename T &gt; </div>
 
 <p>Prints parameters to a stream in an unspecified format. </p>
 
-<p>Definition at line <a class="el" href="params_8cpp_source.html#l00416">416</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
+<p>Definition at line <a class="el" href="params_8cpp_source.html#l00482">482</a> of file <a class="el" href="params_8cpp_source.html">params.cpp</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1108,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 21 2018 13:16:10 for ALPSCore reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 14 2018 12:18:32 for ALPSCore reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

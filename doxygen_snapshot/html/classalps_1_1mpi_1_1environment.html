@@ -102,36 +102,44 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>MPI environment RAII class.  
+ <a href="classalps_1_1mpi_1_1environment.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for alps::mpi::environment:</div>
 <div class="dyncontent">
 <div class="center"><img src="classalps_1_1mpi_1_1environment__coll__graph.png" border="0" usemap="#alps_1_1mpi_1_1environment_coll__map" alt="Collaboration graph"/></div>
-<map name="alps_1_1mpi_1_1environment_coll__map" id="alps_1_1mpi_1_1environment_coll__map">
-</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afa914dde5191af6837e7817067bf6da0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mpi_1_1environment.html#afa914dde5191af6837e7817067bf6da0">environment</a> (int &amp;argc, char **&amp;argv, bool abort_on_exception=true)</td></tr>
+<tr class="memdesc:afa914dde5191af6837e7817067bf6da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes MPI environment unless it's already active.  <a href="#afa914dde5191af6837e7817067bf6da0">More...</a><br /></td></tr>
 <tr class="separator:afa914dde5191af6837e7817067bf6da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ab6ea77c065d12a6efac2eebe7a25c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mpi_1_1environment.html#a4ab6ea77c065d12a6efac2eebe7a25c7">environment</a> (bool abort_on_exception=true)</td></tr>
+<tr class="memdesc:a4ab6ea77c065d12a6efac2eebe7a25c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes MPI environment unless it's already active.  <a href="#a4ab6ea77c065d12a6efac2eebe7a25c7">More...</a><br /></td></tr>
 <tr class="separator:a4ab6ea77c065d12a6efac2eebe7a25c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afacf7f555a983755013724471bdafe7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mpi_1_1environment.html#afacf7f555a983755013724471bdafe7b">~environment</a> ()</td></tr>
+<tr class="memdesc:afacf7f555a983755013724471bdafe7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes MPI unless already finalized or was already initilaized when ctor was called.  <a href="#afacf7f555a983755013724471bdafe7b">More...</a><br /></td></tr>
 <tr class="separator:afacf7f555a983755013724471bdafe7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a93389cbbdb0b2ea3ba1532561102825b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mpi_1_1environment.html#a93389cbbdb0b2ea3ba1532561102825b">abort</a> (int rc=0)</td></tr>
+<tr class="memdesc:a93389cbbdb0b2ea3ba1532561102825b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call <code>MPI_Abort()</code>  <a href="#a93389cbbdb0b2ea3ba1532561102825b">More...</a><br /></td></tr>
 <tr class="separator:a93389cbbdb0b2ea3ba1532561102825b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a276d0506eec56c2f9a3ce3dd88e3c6aa"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mpi_1_1environment.html#a276d0506eec56c2f9a3ce3dd88e3c6aa">initialized</a> ()</td></tr>
+<tr class="memdesc:a276d0506eec56c2f9a3ce3dd88e3c6aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns initialized status of MPI.  <a href="#a276d0506eec56c2f9a3ce3dd88e3c6aa">More...</a><br /></td></tr>
 <tr class="separator:a276d0506eec56c2f9a3ce3dd88e3c6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b0bcb5e2d35a7de1c92d97687c32527"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classalps_1_1mpi_1_1environment.html#a2b0bcb5e2d35a7de1c92d97687c32527">finalized</a> ()</td></tr>
+<tr class="memdesc:a2b0bcb5e2d35a7de1c92d97687c32527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns finalized status of MPI.  <a href="#a2b0bcb5e2d35a7de1c92d97687c32527">More...</a><br /></td></tr>
 <tr class="separator:a2b0bcb5e2d35a7de1c92d97687c32527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00162">162</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
+<div class="textblock"><p>MPI environment RAII class. </p>
+
+<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00182">182</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afa914dde5191af6837e7817067bf6da0"></a>
 <div class="memitem">
@@ -171,7 +179,17 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00186">186</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
+<p>Initializes MPI environment unless it's already active. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td><code>argc</code> argument from <code>main(argc, argv)</code> </td></tr>
+    <tr><td class="paramname">argv</td><td><code>argv</code> argument from <code>main(argc, argv)</code> </td></tr>
+    <tr><td class="paramname">abort_on_exception</td><td>If true and MPI environment object is getting destroyed while an exception is being handled, call <code>MPI_Abort()</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00217">217</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -197,7 +215,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00194">194</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
+<p>Initializes MPI environment unless it's already active. </p>
+<p>This ctor does not pass <code>argc</code> and <code>argv</code>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">abort_on_exception</td><td>If true and MPI environment object is getting destroyed while an exception is being handled, call <code>MPI_Abort()</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00231">231</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -222,7 +248,10 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00203">203</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
+<p>Finalizes MPI unless already finalized or was already initilaized when ctor was called. </p>
+<p>If called during an exception unwinding, may call <code>MPI_Abort()</code> (see the corresponding ctors) </p>
+
+<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00244">244</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -249,7 +278,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00167">167</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
+<p>Call <code>MPI_Abort()</code> </p>
+
+<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00188">188</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -274,7 +305,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00179">179</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
+<p>Returns finalized status of MPI. </p>
+
+<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00202">202</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -299,7 +332,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00172">172</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
+<p>Returns initialized status of MPI. </p>
+
+<p>Definition at line <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html#l00194">194</a> of file <a class="el" href="utilities_2include_2alps_2utilities_2mpi_8hpp_source.html">mpi.hpp</a>.</p>
 
 </div>
 </div>
@@ -309,7 +344,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 21 2018 13:16:10 for ALPSCore reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 14 2018 12:18:32 for ALPSCore reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
